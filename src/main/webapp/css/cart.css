@@ -1,0 +1,151 @@
+:root {
+    /* Colori principali */
+    --primary: #780000;
+    --secondary: #c1121f;
+    --accent: #669bbc;
+    --light: #fdf0d5;
+    --dark: #003049;
+}
+
+/* Stili base */
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container principale */
+.container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5rem 1rem;
+    flex: 1 0 auto;
+}
+
+/* Titolo principale */
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Messaggio carrello vuoto */
+.empty-cart {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 1rem 1.25rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+}
+
+/* Tabella carrello */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d1d5db;
+    text-align: left;
+}
+
+.cart-table thead tr {
+    background-color: var(--accent);
+    color: white;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 0.5rem 0.75rem;
+    border-top: 1px solid #d1d5db;
+}
+
+/* Rimuove il bordo dalla prima riga del corpo */
+.cart-table tbody tr:first-child td {
+    border-top: none;
+}
+
+/* Bottone 'Rimuovi' */
+.btn-remove {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.875rem;
+}
+
+.btn-remove:hover {
+    background-color: #dc2626;
+}
+
+/* Totale del carrello */
+.cart-total {
+    text-align: right;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+/* Form checkout */
+.checkout-form {
+    display: inline;
+}
+
+/* Bottone 'Checkout' */
+.btn-checkout {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.75rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-checkout:hover {
+    background-color: var(--secondary);
+}
+
+/* Header del carrello */
+.cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Bottone 'Ritorna al Catalogo' */
+.btn-back {
+    background-color: var(--accent);
+    color: white;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #4a7ca5;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: auto;
+}

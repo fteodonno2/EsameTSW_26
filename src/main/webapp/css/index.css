@@ -1,0 +1,191 @@
+:root {
+    --primary: #780000;
+    --secondary: #c1121f;
+    --accent: #669bbc;
+    --light: #fdf0d5;
+    --dark: #003049;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Layout */
+.wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: auto;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #fdf0d5, #fff);
+    text-align: center;
+    padding: 5rem 1rem 4rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.cta-button {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary);
+}
+
+/* Bestseller Section */
+.bestseller {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width:100%;
+}
+
+.bestseller h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Book Grid */
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;         /* Permette alle card di andare a capo se lo schermo è piccolo */
+    justify-content: center; /* Centra le card orizzontalmente */
+    gap: 20px;               /* Spazio tra un libro e l'altro */
+}
+
+
+
+
+/* Book Card */
+.book-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex: 1 1 300px;
+    max-width: 360px;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Book Info */
+.book-info {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.book-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.book-info .descrizione {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.book-info .categoria {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.book-info .prezzo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-top: 0.5rem;
+}
+
+/* Book Footer */
+.book-footer {
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.details-button {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: var(--secondary);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}

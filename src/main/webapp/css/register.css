@@ -1,0 +1,123 @@
+:root {
+    --primary: #780000;
+    --secondary: #c1121f;
+    --accent: #669bbc;
+    --light: #fdf0d5;
+    --dark: #003049;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base */
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Layout */
+.register-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    margin-top: 7rem;
+}
+
+.register-box {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+/* Title */
+.register-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+/* Form */
+.register-form .form-group {
+    margin-bottom: 1.25rem;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+
+.register-form input:focus {
+    box-shadow: 0 0 0 2px var(--primary);
+}
+
+/* Button */
+.btn-submit {
+    width: 100%;
+    padding: 0.6rem;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit.green {
+    background-color: #16a34a;
+}
+
+.btn-submit.green:hover {
+    background-color: #15803d;
+}
+
+/* Register Text */
+.register-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.register-text a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+}

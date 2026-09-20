@@ -1,0 +1,140 @@
+/* Variabili colori */
+:root {
+    --primary: #780000;
+    --secondary: #c1121f;
+    --accent: #669bbc;
+    --light: #fdf0d5;
+    --dark: #003049;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container centrale e margini */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+
+
+/* Titolo */
+h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+/* Griglia responsive */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Card prodotto */
+.product-card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-card img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--dark);
+}
+
+.product-info p.description {
+    font-size: 0.875rem;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    flex-grow: 1;
+}
+
+.product-info p.category {
+    font-size: 0.875rem;
+    color: #a0aec0;
+    margin-bottom: 0.25rem;
+}
+
+.product-info p.price {
+    font-size: 1.125rem;
+    color: var(--primary);
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Bottone dettagli */
+.product-footer {
+    padding: 1rem;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.product-footer a {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.product-footer a:hover {
+    background-color: var(--secondary);
+}
+
+/* Messaggio nessun prodotto */
+.no-products {
+    color: #dc2626;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1rem;
+}

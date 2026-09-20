@@ -1,0 +1,132 @@
+:root {
+    /* Colori principali */
+    --rosso-scuro: #780000;
+    --rosso-vivo: #C1121F;
+    --beige-chiaro: #FDF0D5;
+    --blu-notte: #003049;
+    --azzurro-desaturato: #669BBC;
+}
+
+/* Stile di base del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--beige-chiaro);
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+}
+
+/* Contenitore del form */
+.feedback-form {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    border: 2px solid var(--azzurro-desaturato);
+}
+
+/* Titolo del form */
+.feedback-form h2 {
+    margin-bottom: 20px;
+    color: var(--blu-notte);
+}
+
+/* Etichette dei campi */
+.feedback-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: var(--rosso-scuro);
+}
+
+/* Campi input, select e textarea */
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1.8px solid var(--azzurro-desaturato);
+    border-radius: 5px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus sui campi */
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    border-color: var(--blu-notte);
+    outline: none;
+}
+
+/* Textarea più grande */
+.feedback-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Bottone di invio */
+.feedback-form button {
+    background-color: var(--rosso-vivo);
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover sul bottone */
+.feedback-form button:hover {
+    background-color: var(--rosso-scuro);
+}
+
+/* Messaggio di risposta */
+.feedback-message {
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+/* Messaggio di successo */
+.feedback-message.success {
+    color: var(--blu-notte);
+}
+
+/* Messaggio di errore */
+.feedback-message.error {
+    color: var(--rosso-scuro);
+}
+
+/* Bottone "Torna alla Home" fisso in basso a destra */
+.home-button-form {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin: 0;
+    z-index: 1000;
+}
+
+/* Stile del bottone "Home" */
+.home-button {
+    background-color: var(--blu-notte);
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover sul bottone "Home" */
+.home-button:hover {
+    background-color: var(--azzurro-desaturato);
+    color: var(--blu-notte);
+}
