@@ -1,17 +1,15 @@
-# Progetto TSW 2024/2025 - Sorrentino & Teodonno
+Progetto TSW 2025/2026 - Teodonno
+Questo è il repository del progetto per il corso di Tecnologie e Sviluppo Web (TSW).
 
-Questo è il repository del nostro progetto per il corso di Tecnologie e Sviluppo Web (TSW).
-
-Descrizione
-Portale per la visualizzazione, gestione e acquisto di libri online.
+Descrizione Portale per la visualizzazione, gestione e acquisto di libri online.
 
 Tecnologie usate
-- Java / Servlet
-- JSP / JSTL
-- GitLab
-- IntelliJ IDEA
-- HTML / CSS
 
-Autori
-- [Luca Sorrentino]
-- [Francesco Teodonno]
+Java / Servlet
+JSP / JSTL
+GitLab
+IntelliJ IDEA
+HTML / CSS
+Autore:
+
+[Francesco Teodonno]
